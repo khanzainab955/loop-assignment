@@ -1,0 +1,63 @@
+Q3. What are loops, and what do we need them? Explain different types of loops with their syntax and
+examples.
+
+Loops are a programming construct that allows us to execute a block of code repeatedly, as long as a certain condition is met. Loops are used in JavaScript to perform repeated tasks based on a condition. Conditions typically return true or false. A loop will continue running until the defined condition returns false.
+
+1)while loop: Iterates elements for an infinite number of times. The syntax is:
+While(condition){
+
+Code//
+}
+
+Example:
+var i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+2)do while loop: Iterates elements for an infinite number of times. The code is executed at least once whether the condition is true or false. The syntax is:
+
+do(
+code to be executed
+) while (condition);
+
+
+Example:
+var i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 10);
+
+3)for in loop: Iterates the properties of an object. JavaScript loops are mostly used in arrays. The syntax is:
+for(variable in object)
+{
+code to be executed
+}
+
+Example:
+var obj = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+for (var prop in obj) {
+  console.log(prop + ": " + obj[prop]);
+}
+
+
+4) for of loop: Iterates the values of an iterable object. The syntax is:
+for(variable of iterable)
+{
+code to be executed
+}
+
+
+Example:
+
+var arr = [1, 2, 3, 4, 5];
+
+for (var value of arr) {
+  console.log(value);
+}

@@ -1,0 +1,85 @@
+Q1. What are conditional statements? Explain conditional statements with syntax and examples.
+Conditional statements are programming constructs that allow the execution of different blocks of code based on whether a certain condition evaluates to true or false. These statements enable the creation of decision-making processes within a program.
+1)if statement: It executes a block of code if a specified condition is true.
+ Syntax:
+If(condition){
+ //  block of code to be executed if the condition is true
+};
+Example:
+if (hour < 18) {
+  greeting = "Good day";
+}
+2)else statement: to specify a block of code to be executed, if the same condition is false.
+Syntax:
+
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+Example:
+If (hours<18){
+Console.log(“good day”);
+}else{
+Console.log(“good evening”);
+}
+
+3)Else if statement: to specify a new condition to test, if the first condition is false.
+Syntax:
+If(condition){
+
+ block of code to be executed if condition1 is true//
+}
+Else if(condition2){
+ Block of code to be executed if condition1 is false and condition2 is true// 
+
+}else{
+block of code to be executed if the condition1 is false and condition2 is false
+}
+
+Example:
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+switch:  to specify many alternative blocks of code to be executed.
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+example:
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+
+
